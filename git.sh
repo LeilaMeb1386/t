@@ -1,9 +1,9 @@
 #!/bin/bash
 git init
 git add --all
-echo "quel est le nom du commit "
-read message
-git commit -m "$message"
+echo "entrez le message pour votre commit "
+read commit
+git commit -m "$commit"
 echo "entrez l'url de votre remote"
 read remote
 git remote add origin $remote
